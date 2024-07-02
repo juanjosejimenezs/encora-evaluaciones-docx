@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; img-src 'self' blob:;"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Evaluaciones</title>
+    <script defer src="./renderer.js"></script>
+  </head>
+  <body>
+    <h1>Encora Evaluaciones</h1>
+    <p>Carga un archivo de Excel en formato .xlsx</p>
+    <div class="main-container">
+      <div class="file-input-container">
+        <input type="file" id="fileInput" class="file-input" />
+        <label for="fileInput" class="file-input-label"
+          >Seleccione un archivo</label
+        >
+        <span class="file-name" id="fileName">Ningún archivo seleccionado</span>
+      </div>
+      <button id="wordButton" class="wordButton">Convertir DOCX</button>
+    </div>
+  </body>
+</html>
